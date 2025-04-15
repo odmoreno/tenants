@@ -1,0 +1,10 @@
+Django
+pillow
+django-cleanup
+django-allauth
+django-htmx
+django-tenants
+psycopg2-binary
+django-colorfield
+gunicorn  
+django-environ
