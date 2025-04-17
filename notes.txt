@@ -14,16 +14,14 @@ PS C:\Users\USER\Documents\Connectix\backend> docker-compose --env-file .env -f 
 
 
 🔧 ¿Cómo haces migraciones en este caso?
+
 Opción 1: Entras al contenedor como siempre
-bash
-Copiar
-Editar
+
 docker-compose -f docker-compose.test.yml exec web bash
+
 Y desde ahí ejecutas:
 
-bash
-Copiar
-Editar
 python manage.py makemigrations apps.tenant_manager
 python manage.py migrate_schemas --shared
+
 ✅ Esto es 100% igual al flujo normal.

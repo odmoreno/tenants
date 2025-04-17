@@ -81,7 +81,7 @@ INSTALLED_APPS = SHARED_APPS + [app for app in TENANT_APPS if app not in SHARED_
 SITE_ID = 1
 
 MIDDLEWARE = [
-    "django_tenants.middleware.main.TenantMainMiddleware",
+    "django_tenants.middleware.TenantMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -132,7 +132,7 @@ if ENVIRONMENT == "development":
             "USER": "postgres",
             "PASSWORD": "postgres",
             "HOST": "localhost",
-            "PORT": "5433",
+            "PORT": "5420",
         }
     }
 else:

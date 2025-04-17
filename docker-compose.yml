@@ -3,9 +3,9 @@ name: tenants
 services:
   postgres:
     image: postgres
-    container_name: postgres-container
+    container_name: postgres-container-tenants
     ports:
-      - "5433:5432"
+      - "5420:5432"
     environment:
       POSTGRES_DB: tenants
       POSTGRES_USER: postgres
@@ -15,3 +15,5 @@ services:
 
 volumes:
   postgres-data:
+
+

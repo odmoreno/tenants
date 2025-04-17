@@ -12,6 +12,7 @@ class Item(models.Model):
 class SiteSetting(models.Model):
     name = models.CharField(max_length=100)
     color = ColorField(default="#000000")
+    logo = models.ImageField(upload_to="logos/", blank=True, null=True)
 
     def __str__(self):
         return self.name
